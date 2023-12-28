@@ -1,0 +1,9 @@
+@use 'vars';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: vars.$principal-font;
+  list-style: none;
+}
