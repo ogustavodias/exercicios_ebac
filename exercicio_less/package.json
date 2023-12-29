@@ -1,19 +1,16 @@
 {
-  "name": "exercicio_gulp",
+  "name": "exercicio_less",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "less": "less-watch-compiler ./src ./build main.less",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gustavo Dias",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-uglify": "^3.0.2",
-    "sass": "^1.69.6"
+    "less": "^4.2.0",
+    "less-watch-compiler": "^1.16.3"
   }
 }
