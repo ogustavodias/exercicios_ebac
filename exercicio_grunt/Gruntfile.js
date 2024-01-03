@@ -18,7 +18,7 @@ module.exports = function (grunt) {
       },
       build: {
         options: {
-          paths: ["./src/styles"],
+          paths: ["./prebuild/styles/"],
         },
         files: {
           "./dist/styles/main.css": "./prebuild/styles/main.css",
