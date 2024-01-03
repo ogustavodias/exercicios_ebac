@@ -13,7 +13,15 @@ module.exports = function (grunt) {
           paths: ["./src/styles"],
         },
         files: {
-          "./build/styles/main.css": "./src/styles/main.less",
+          "./prebuild/styles/main.css": "./src/styles/main.less",
+        },
+      },
+      build: {
+        options: {
+          paths: ["./src/styles"],
+        },
+        files: {
+          "./dist/styles/main.css": "./prebuild/styles/main.css",
         },
       },
     },
@@ -22,13 +30,14 @@ module.exports = function (grunt) {
     watch: {
       styles: {
         files: ["./src/**/*.less"],
-        tasks: ["less"],
+        tasks: ["less:development"],
         options: {
-          span: false,
+          spawn: false,
         },
       },
     },
   });
 
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask("default", ["watch"]);
+  grunt.registerTask("build", ["less:build"]);
 };
