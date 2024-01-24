@@ -31,7 +31,7 @@ async function set_fields() {
   const username = username_get();
   const data = await request_user(username);
 
-  // DOM elementsGustavo
+  // DOM elements
   const AVATAR = $(".profile-avatar")[0];
   const NAME = $(".profile-name")[0];
   const USERNAME = $(".profile-username")[0];
