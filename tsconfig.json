@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "./exercicio_ts/dist",
+    "rootDir": "./exercicio_ts",
+    "strict": true
+  }
+}
